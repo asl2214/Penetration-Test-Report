@@ -139,7 +139,7 @@ Informational: No threat; however, it is data that may be used in a future attac
 
 As the following grid shows, each threat is assessed in terms of both its potential impact on the business and the likelihood of exploitation:
 
-![Chart Description automatically generated with medium confidence](media/8105384a09c724f5f36b4007c6aa15ec.png)
+![Grading Methodology](Images/grading%20methodology.png)
 
 $%$
 
@@ -231,7 +231,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Web Application                                                                                                                                                                                                                                                                                                                |
 | **Risk Rating**                            | Critical                                                                                                                                                                                                                                                                                                                       |
 | **Description**                            | Malicious script was inputted and payload was successfully reflected on the welcome page:   \<script\>alert(“ali was here”)\</script\>  Malicious script was inputted and payload was successfully reflected through the Memory Planner page despite input validation:   \<scrscriptipt\>alert(“ali was here”)\<scrscriptipt\> |
-| **Images**                                 | ![](media/f28e3b239bdcad57abd7e2fc5188ea28.png) ![](media/23ef6006799027c5d39c2f829697b4de.png)                                                                                                                                                                                                                                |
+| **Images**                                 | ![](Images/1-1.png) ![](Images/1-2.png)                                                                                                                                                                                                                                |
 | **Affected Hosts**                         | 192.168.14.35                                                                                                                                                                                                                                                                                                                  |
 | **Remediation**                            | Implement a web application firewall to mitigate against this attack                                                                                                                                                                                                                                                           |
 
@@ -241,7 +241,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Web Application                                                                                                                                                                |
 | **Risk Rating**                            | Critical                                                                                                                                                                       |
 | **Description**                            | Malicious script was injected successfully and accepted within the database. Response was posted as active content comments page:   \<script\>alert(“ali was here”)\</script\> |
-| **Images**                                 | ![](media/91175a6a6e769668c967447808582eb1.png)                                                                                                                                |
+| **Images**                                 | ![](Images/2-1.png)                                                                                                                                |
 | **Affected Hosts**                         | 192.168.14.35                                                                                                                                                                  |
 | **Remediation**                            | Restrict characters and input involving possible malicious string through output escaping.                                                                                     |
 
@@ -251,7 +251,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Web Application                                                                                  |
 | **Risk Rating**                            | Critical                                                                                         |
 | **Description**                            | Successful upload of a PHP file onto Memory Planner VR page.                                     |
-| **Images**                                 | ![](media/a9891d256c0a5d3fa8c3d2de1f25b85a.png) ![](media/50589b48859f82c8ea048e1005f78b63.png)  |
+| **Images**                                 | ![](Images/3-1.png) ![](Images/3-2.png)  |
 | **Affected Hosts**                         | 192.168.14.35                                                                                    |
 | **Remediation**                            | Whitelist files that can be uploaded to the web server.                                          |
 
@@ -261,7 +261,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Web Application                                                                                  |
 | **Risk Rating**                            | Critical                                                                                         |
 | **Description**                            | Attempted code injection through user input on login page using the code:   doug' or 1=1-- -     |
-| **Images**                                 | ![](media/55e297ac73fa54b0603f7c18bce25a1f.png)                                                  |
+| **Images**                                 | ![](Images/4-1.png)                                                  |
 | **Affected Hosts**                         | 192.168.14.35                                                                                    |
 | **Remediation**                            | Set parameters to ensure that the injection is read as data and not as code that can be executed |
 
@@ -271,7 +271,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Web Application                                                                                                                                                     |
 | **Risk Rating**                            | Critical                                                                                                                                                            |
 | **Description**                            | Gained access of directory through inputing commands in the DNS Check search box:   [www.example.com](http://www.example.com) \| ls /../../../../../../www/var/html |
-| **Images**                                 | ![](media/8ecb68d2030d3966d5943026774bc266.png)                                                                                                                     |
+| **Images**                                 | ![](Images/5-1.png)                                                                                                                     |
 | **Affected Hosts**                         | 192.168.14.35                                                                                                                                                       |
 | **Remediation**                            | Block user-supplied input to filesystem API through inputting a whitelist of permitted values.                                                                      |
 
@@ -281,7 +281,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Web Application                                                                                                                                                                                                     |
 | **Risk Rating**                            | Critical                                                                                                                                                                                                            |
 | **Description**                            | Gained access of directory through inputing commands in the website url:  192.168.14.35/disclaimer.php?page=../../../../../../../../etc/passwd  192.168.14.35/disclaimer.php?page=/old_disclaimers/disclaimer_1.txt |
-| **Images**                                 | ![](media/810045ac214af7d12a8fe58bd233266c.png) ![](media/9968a3e723f73635bc824560f803a148.png)                                                                                                                     |
+| **Images**                                 | ![](Images/6-1.png) ![](Images/6-2.png)                                                                                                                    |
 | **Affected Hosts**                         | 192.168.14.35                                                                                                                                                                                                       |
 | **Remediation**                            | Block user-supplied input to filesystem API through inputting a whitelist of permitted values.                                                                                                                      |
 
@@ -291,7 +291,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Web Application                                                                                     |
 | **Risk Rating**                            | Critical                                                                                            |
 | **Description**                            | Login.php HTML page source was inspected. User credentials were found at the end of the HTML code.  |
-| **Images**                                 | ![](media/f2776de35b3d90b765d5fafa101edf6b.png) ![](media/8ac34f17cbb1cbb93f69f37742bd6e3f.png)     |
+| **Images**                                 | ![](Images/7-1.png) ![](Images/7-2.png)     |
 | **Affected Hosts**                         | 192.168.14.35                                                                                       |
 | **Remediation**                            | Remove user credentials from HTML page source.                                                      |
 
@@ -301,7 +301,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Web Application                                                                                    |
 | **Risk Rating**                            | Critical                                                                                           |
 | **Description**                            | A brute force attack was executed through Burp Suite on the admin page for access to admin files.  |
-| **Images**                                 | ![](media/ca46fc9e28fbd3a23ae30e262d2b8ea5.png) ![](media/4cb2f6f49aee5c4dd41935d81b3d2326.png)    |
+| **Images**                                 | ![](Images/8-1.png) ![](Images/8-2.png)    |
 | **Affected Hosts**                         | 192.168.14.35                                                                                      |
 | **Remediation**                            | Implement rate limiting and CAPTCHA to prevent the number of attempts done on the site.            |
 
@@ -311,7 +311,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Web Application                                                                         |
 | **Risk Rating**                            | Critical                                                                                |
 | **Description**                            | OSINT lookup of totalrekall.xyz was done to check WHOIS record on CentralOps.net        |
-| **Images**                                 | ![](media/fcd879e5484244afa13d43c6741a2ff9.png)                                         |
+| **Images**                                 | ![](Images/9.png)                                         |
 | **Affected Hosts**                         | totalrekall.xyz                                                                         |
 | **Remediation**                            | Use a third-party to hide sensitive information of the corporation from WHOIS records.  |
 
@@ -321,7 +321,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Linux OS                                                                                                   |
 | **Risk Rating**                            | High                                                                                                       |
 | **Description**                            | An Nmap scan was done to check for open hosts and ports within the subnet range:  nmap -sV 192.168.13.0/24 |
-| **Images**                                 | ![](media/ce33fe249912401c14845048ce994a7b.png)                                                            |
+| **Images**                                 | ![](Images/10.png)                                                            |
 | **Affected Hosts**                         | 192.168.13.0/24                                                                                            |
 | **Remediation**                            | Close IP addresses and ports that are not being used.                                                      |
 
@@ -331,7 +331,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Linux OS                                                                    |
 | **Risk Rating**                            | High                                                                        |
 | **Description**                            | An aggressive Nmap scan was done for 192.168.13.13.   nmap -A 192.168.13.13 |
-| **Images**                                 | ![](media/f273a7a0f96710868e1387c0fe1e8e7f.png)                             |
+| **Images**                                 | ![](Images/11.png)                             |
 | **Affected Hosts**                         | 192.168.13.13                                                               |
 | **Remediation**                            | Configure a firewall to prevent exposure of services that are open.         |
 
@@ -341,7 +341,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Linux OS                                                                                                              |
 | **Risk Rating**                            | Critical                                                                                                              |
 | **Description**                            | Successful Meterpreter session was created on 192.168.13.13 to test port 80 on unix/webapp/drupal_restws_unserialize. |
-| **Images**                                 | ![](media/34fc4772903890de9708c4e6569e7499.png) ![](media/cb1d1ab8a6645a2095dac883ac186765.png)                       |
+| **Images**                                 | ![](Images/12-1.png) ![](Images/12-2.png)                       |
 | **Affected Hosts**                         | 192.168.13.13                                                                                                         |
 | **Remediation**                            | Restrict privilege of access of www-data.                                                                             |
 
@@ -351,7 +351,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Linux OS                                                             |
 | **Risk Rating**                            | Critical                                                             |
 | **Description**                            | Nessus scan was done to check for vulnerabilities for 192.168.13.12. |
-| **Images**                                 | ![](media/a9aa99fd6dc2547150e2b68c505fa348.png)                      |
+| **Images**                                 | ![](Images/13.png)                      |
 | **Affected Hosts**                         | 192.168.13.12                                                        |
 | **Remediation**                            | Update Apache Struts to the latest version.                          |
 
@@ -361,7 +361,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Linux OS                                                                                                                                                                                                                                           |
 | **Risk Rating**                            | Critical                                                                                                                                                                                                                                           |
 | **Description**                            | From the result of the Nessus Scan, a vulnerable exploit was found used to open a Meterpreter Shell Session of 192.168.13.12 using exploit/multi/http/struts2_content_type_ognl .                                                                  |
-| **Images**                                 | ![](media/a3444bfef5f589b4028e30c250543608.png)  ![](media/9c46b4cedb8c6993f2ebce05c4a78445.png)  ![](media/b38d34a8b60e0f2bfad08839e81e0ac3.png)  ![](media/1ccf3b4bfba281129b07e178597a3cfc.png) ![](media/6acc92ed38f3f48d578e63e12a726946.png) |
+| **Images**                                 | ![](Images/14-1.png)  ![](Images/14-2.png)  ![](Images/14-3.png)  ![](Images/14-4.png) ![](Images/14-5.png) |
 | **Affected Hosts**                         | 192.168.13.12                                                                                                                                                                                                                                      |
 | **Remediation**                            | Update Apache to the latest version.                                                                                                                                                                                                               |
 
@@ -371,7 +371,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Linux OS                                                                                                                                                                                |
 | **Risk Rating**                            | Critical                                                                                                                                                                                |
 | **Description**                            | Privilege escalation was done using user credentials found from the WHOIS record scan to gain root access of 192.168.13.14.   ssh alice@192.168.13.14  password: alice  sudo -u\#-1 su  |
-| **Images**                                 | ![](media/8bd8e6d10b7ff5b0c041317869d002b8.png) ![](media/d58602ed98ae54da7cef9cd91744e389.png)                                                                                         |
+| **Images**                                 | ![](Images/15-1.png) ![](Images/15-2.png)                                                                                         |
 | **Affected Hosts**                         | 192.168.13.14                                                                                                                                                                           |
 | **Remediation**                            | Require password to meet basic requirements such as minimum length of at least 8 characters, lowercase, uppercase, and symbols.                                                         |
 
@@ -381,7 +381,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Web App and Linux OS                                                                                                                      |
 | **Risk Rating**                            | Critical                                                                                                                                  |
 | **Description**                            | Totalrekall’s github repository contained a user and a hashed password associated with it. Password was successfully cracked using john.  |
-| **Images**                                 | ![](media/cdb3469977efe1c4ec29c57bc98b415b.png) ![](media/3145e66728e56c8544d2ba49b768a11f.png)                                           |
+| **Images**                                 | ![](Images/16-1.png) ![](Images/16-2.png)                                           |
 | **Affected Hosts**                         | totalrekall/site/xamp.users                                                                                                               |
 | **Remediation**                            | Remove credentials from the repository and implement stronger security on who can have access to said site. Remove user credentials.      |
 
@@ -391,7 +391,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Web App                                                                                      |
 | **Risk Rating**                            | Critical                                                                                     |
 | **Description**                            | Stolen credentials, from previous vulnerability, were used to successfully access the site.  |
-| **Images**                                 | ![](media/9f6a51511ab7270de17b6153e2b604b3.png)                                              |
+| **Images**                                 | ![](Images/17.png)                                              |
 | **Affected Hosts**                         | 172.22.117.20                                                                                |
 | **Remediation**                            | Shut down sites that no longer are needed or require stronger credentials.                   |
 
@@ -401,7 +401,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Linux OS and Windows OS                                                                                                |
 | **Risk Rating**                            | Critical                                                                                                               |
 | **Description**                            | FTP port was detected as open from the aggressive Nmap scan of 172.22.117.20. Accessed FTP port as an anonymous user.  |
-| **Images**                                 | ![](media/39933ee2fcd2de749c365d46beee9dfb.png)  ![](media/c37319b4ecdf26272e51e8b513f47685.png)                       |
+| **Images**                                 | ![](Images/18-1.png)  ![](Images/18-2.png)                       |
 | **Affected Hosts**                         | 172.22.117.20                                                                                                          |
 | **Remediation**                            | Change FTP port 21 to SFTP port 22.                                                                                    |
 
@@ -411,7 +411,7 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Linux OS and Windows OS                                                                                                                                                                                                   |
 | **Risk Rating**                            | Critical                                                                                                                                                                                                                  |
 | **Description**                            | Successfully exploited port 110 of 172.22.117.20 through windows/pop3/seattlelab_pass exploit on Metasploit. A successful session of Meterpreter was run with full access to the remote desktop’s directories and files.  |
-| **Images**                                 | ![](media/1dbc4626c9255e4da53634fbba9c15fa.png)                                                                                                                                                                           |
+| **Images**                                 | ![](Images/19.png)                                                                                                                                                                           |
 | **Affected Hosts**                         | 172.22.117.20                                                                                                                                                                                                             |
 | **Remediation**                            | Change service to a different mail server that is stronger and not as exploitable.                                                                                                                                        |
 
@@ -421,6 +421,6 @@ $%$
 | **Type (Web app / Linux OS / Windows OS)** | Linux OS and Windows OS                                                                                                                               |
 | **Risk Rating**                            | Critical                                                                                                                                              |
 | **Description**                            | Through opening a successful Metasploit session, kiwi was loaded to view other user accounts and hashed passwords that were stored in 172.22.117.20.  |
-| **Images**                                 | ![](media/444c43d0be2e257dce58d81cc6be16df.png) ![](media/753f7903d71619b5b04d48d7e982d730.png)                                                       |
+| **Images**                                 | ![](Images/20-1.png) ![](Images/20-2.png)                                                       |
 | **Affected Hosts**                         | 172.22.117.20                                                                                                                                         |
 | **Remediation**                            | Enable protected mode on LSASS to prevent credential dump attempts.                                                                                   |
